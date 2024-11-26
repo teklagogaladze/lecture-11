@@ -62,9 +62,6 @@ input[type="submit"] {
   margin: 0 20px 20px;
 }
 
-input[type="submit"]:hover {
-  background-color: ;
-}
 .numbers {
   margin-top: 51px;
 }
@@ -73,12 +70,7 @@ input[type="submit"]:hover {
   flex-direction: row;
   justify-content: space-around;
 }
-.icons {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 .main {
   color: #4e4d54;
   font-size: 20px;
@@ -95,8 +87,7 @@ input[type="submit"]:hover {
   color: #000000;
   font-size: 49px;
   font-weight: 400;
-  width: 350px;
-  width: 500px;
+  width: 600px;
 }
 .img {
   background-color: #5968f4;
@@ -105,9 +96,10 @@ input[type="submit"]:hover {
   height: 68px;
 }
 .images {
-  padding: 53px 0px 0 61px;
   display: flex;
-  gap: 100px;
+  gap: 50px;
+  margin-top: 53px;
+  justify-content: space-around;
 }
 .text {
   color: #ffffff;
@@ -163,4 +155,49 @@ footer {
 .footer4 {
   margin-left: 30px;
   margin-top: 63px;
+}
+.iconinfo {
+  display: flex;
+}
+.icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #5863e3;
+  justify-content: center;
+  align-items: center;
+}
+.icon1 {
+  font-size: 30px;
+  color: #344188;
+}
+.icon2 {
+  color: #5863e3;
+  margin-right: 5px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  form {
+    flex-direction: column;
+  }
+  textarea {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  submit {
+    width: 100%;
+  }
 }
